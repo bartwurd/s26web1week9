@@ -53,6 +53,35 @@ table {
         MOBILE STYLES 
 ********************************************************************************/
 
+.container{
+    padding: 0 0.5em;
+/* you never want anything right up against the edge of the screen, 
+so a small amount of padding on the left and right helps leave a bit of whitespace */
+}
+
 h1{
     font-size:30px;
+}
+
+/* style the navigation links so they are more like buttons, and easier to click with your finger */
+
+nav ul a{
+    background-color: aquamarine;
+    display:block; /* make them block elements so they can have width and height */
+    width:100%;
+    height:2em; /* 1 em is the size of the element's fon size. If 1em=16 then 2em=32 */
+    text-align:center;
+    border-top:1px solid rgb(83, 143, 183);
+    border-bottom:1px solid rgb(83, 143, 183);
+    text-decoration:none;
+    color:cornflowerblue;
+    
+}
+
+nav ul a:active{
+    background-color:rgb(133, 168, 192);
+}
+
+img{
+    max-width:100%;
 }
