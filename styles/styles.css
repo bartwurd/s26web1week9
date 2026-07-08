@@ -85,3 +85,17 @@ nav ul a:active{
 img{
     max-width:100%;
 }
+
+
+/*********************************************************************
+        LARGER SCREENS
+        MEDIA QUERIES
+********************************************************************/
+
+@media screen and (min-width:600px){
+    /* all CSS in this media query will only appy to your site when 
+    the size of the user's screen is 600px wide or greater */
+    body{
+        background: red;
+    }
+}
