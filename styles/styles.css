@@ -95,7 +95,46 @@ img{
 @media screen and (min-width:600px){
     /* all CSS in this media query will only appy to your site when 
     the size of the user's screen is 600px wide or greater */
-    body{
-        background: red;
+    
+    /* switch the nav from vertical to horizontal */
+    nav ul li{
+        /* modify the list items the anchor tags are inside of */
+        float:left;
+        width: 25%;
+        margin:0;
+        padding:0;
     }
+
+    nav ul a{
+        /* override the borders on the anchor tags */
+        border-top:none;
+        border-bottom:none;
+        border-left:2px solid rgb(83, 143, 183);
+    }
+
+    /* the first anchor tag has a border on the left, which we don't
+     want- so we can style the anchor in the first list item to have no border, 
+     using :first-child */
+     nav ul li:first-child a{
+        border-left: none;
+     }
+}
+
+@media screen and (min-width:768px){
+    /* the CSS in this media quer will only apply to your site when the size of the
+     screen is 768px or greater - since this is after the 600px media query, styles 
+     inside here will override it. */
+
+     body{
+        background: rgb(200, 200, 200);
+     }
+
+     .container{
+        width:100%;
+        max-width:800px;
+        margin:0 auto;
+        background:white;
+        /* this will center the container div in the browser window when the screen is 
+        wider than 800px */
+     }
 }
